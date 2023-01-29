@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div class="dashboard">
+    <div class="header">
+      <h1>The Happiness in the World</h1>
+    </div>
+
+    <div class="settings">
+      <input type="radio" value="2015" name="year" class="year">2015</input>
+      <input type="radio" value="2016" name="year" class="year">2016</input>
+      <input type="radio" value="2017" name="year" class="year">2017</input>
+      <input type="radio" value="2018" name="year" class="year">2018</input>
+      <input type="radio" value="2019" name="year" class="year">2019</input>
+      <input type="radio" value="2020" name="year" class="year" checked="checked">2020</input>
+    </div>
+
+    <!-- Bar Chart -->
+
+    <div class="container">
+      <div class="barChart box">
+        <h2>Standard of Living</h2>
+        <h4>vs Happiness Score</h4>
+        <div id="barChart-wrapper">
+          <canvas id="barChart"></canvas>
+        </div>
+      </div>
+
+
+      <!-- World Map -->
+      <div class="worldMap box">
+        <h2>Countries</h2>
+        <h4>vs Happiness Score</h4>
+        <svg id="worldMap" width="622.35" height="510"></svg>
+      </div>
+
+
+      <!-- BubbleChart -->
+      <div class="bubbleChart box">
+        <h2>Political Trust and Liberty</h2>
+        <h4>vs Happiness Score</h4>
+        <svg id="bubbleChart"></svg>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Load D3 and ChartJs -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://d3js.org/d3.v6.js"></script>
+
+  <!-- Load Chart Scripts -->
+  <script src="JavaScript/index.js" type="module"></script>
+
+</body>
+
+</html>
